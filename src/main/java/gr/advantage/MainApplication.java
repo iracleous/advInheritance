@@ -3,29 +3,18 @@ package gr.advantage;
 import gr.advantage.model.Employee;
 import gr.advantage.model.Partner;
 import gr.advantage.model.Person;
+import gr.advantage.service.EmployeeServiceImpl;
+import gr.advantage.service.PersonFunctions;
+import gr.advantage.ui.Ui;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class MainApplication {
-    public static void main(String[] args) {
-        Person employee = new Employee();
-        Person partner = new Partner();
 
-        employee.register();
-        partner.register();
-
-        ////
-
-        Person person = partner;
-        System.out.println(person.getStatus());
-
-        //
-        person = employee;
-        System.out.println(person.getStatus());
-
-
-
-
+    public static void main(String[] args) throws Exception {
+       Ui ui =  new Ui();
+       ui.ui();
 
     }
 }

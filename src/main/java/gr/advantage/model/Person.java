@@ -10,19 +10,13 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public abstract class Person {
 
-    protected static final String NOT_HIRED = "not hired";
-    protected static final String HIRED = "hired on ";
+public abstract class Person   {
 
-    private String firstName;
-    private String lastName;
-    private String address;
-    private Date dateOfBirth;
-    private boolean isMarried;
-    private BigDecimal account;
-
-    public abstract void register() ;
-    public abstract String getStatus() ;
-
+    protected String firstName;
+    protected String lastName;
+    protected String address;
+    protected Date dateOfBirth;
+    protected boolean isMarried;
+    protected BigDecimal account;
 }

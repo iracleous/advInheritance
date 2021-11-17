@@ -12,16 +12,5 @@ public class Partner  extends Person{
     private String speciality;
     private boolean isActive;
 
-    @Override
-    public void register(){
-        isActive = true;
-    }
 
-    @Override
-    public String getStatus() {
-        if (!isActive) {
-            return NOT_HIRED;
-        }
-        return HIRED;
-    }
 }
