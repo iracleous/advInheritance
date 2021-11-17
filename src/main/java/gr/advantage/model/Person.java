@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Person {
+public abstract class Person {
 
     protected static final String NOT_HIRED = "not hired";
     protected static final String HIRED = "hired on ";
@@ -22,11 +22,7 @@ public class Person {
     private boolean isMarried;
     private BigDecimal account;
 
-    public void register(){
-    }
-
-    public String getStatus(){
-        return "simple Person";
-    }
+    public abstract void register() ;
+    public abstract String getStatus() ;
 
 }
